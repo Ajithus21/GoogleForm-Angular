@@ -8,6 +8,6 @@ export class DataService {
 	constructor(private httpclient: HttpClient) {}
 
 	postData(data): Observable<any> {
-		return this.httpclient.post('http://localhost:3000/', data);
+		return this.httpclient.post('https://googleform-aj.herokuapp.com/', data);
 	}
 }
